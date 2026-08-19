@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vegas Travel Intelligence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top"><span>V</span> Vegas / Field Guide</a>
+    <nav><a href="#areas">Areas</a><a href="#safety">Situational awareness</a><a href="#plan">Plan a day</a></nav>
+    <button class="outline-button" id="save-plan">Save plan</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">A sharper way to move through the city</p><h1>Vegas, read<br><em>between the lights.</em></h1><p>Start with the neighborhood, not the algorithm. Find the right rhythm for your trip, understand how a district changes through the day, and keep a grounded eye on verified public information.</p><div class="hero-actions"><a class="primary-button" href="#areas">Explore the city <span>↓</span></a><span class="updated">Local guide / August 2026</span></div></div>
+      <div class="hero-art" aria-label="Illustrated Las Vegas travel scene"><div class="sun"></div><div class="mountains back"></div><div class="mountains front"></div><div class="road"></div><div class="sign"><small>WELCOME</small><strong>TO<br>VEGAS</strong><i>●</i></div></div>
+    </section>
+
+    <section class="ticker"><span>Tonight's read</span><strong id="city-state">City activity changes by hour</strong><span class="ticker-dot"></span><span>Eight area guides</span><span class="ticker-dot"></span><span>Demo safety feed clearly labeled</span></section>
+
+    <section class="section" id="areas"><div class="section-heading"><div><p class="eyebrow">01 / Choose your base</p><h2>The city has more than one pulse.</h2></div><p>Tourist corridors are only the beginning. Each area has a different answer to the same question: what do you want today to feel like?</p></div><div class="area-grid" id="area-grid"></div></section>
+
+    <section class="safety-section" id="safety"><div class="section-heading light"><div><p class="eyebrow">02 / Situational awareness</p><h2>A map that admits what it knows.</h2></div><p>Colors show modeled area activity by time of day. The event panel is a demo until a verified public feed is connected. Never treat this as emergency information.</p></div><div class="safety-layout"><div class="map-card"><div class="map-top"><span>Activity model</span><label><input id="hour" type="range" min="0" max="23" value="18"><b id="hour-label">18:00</b></label></div><div class="map" id="map"></div><div class="legend"><span><i class="calm"></i>Calm</span><span><i class="active"></i>Active</span><span><i class="busy"></i>Busy</span><span><i class="high"></i>High activity</span></div></div><aside class="event-card"><div class="event-heading"><div><p class="eyebrow">Demo feed</p><h3>Last reported events</h3></div><span class="feed-status">Not live</span></div><p class="notice">These are illustrative events, not current alerts. Connect an official source before publishing live claims.</p><ol id="events"></ol><a class="text-link" href="https://www.lvmpd.com/" target="_blank" rel="noreferrer">Find official public-safety information ↗</a></aside></div></section>
+
+    <section class="section" id="plan"><div class="section-heading"><div><p class="eyebrow">03 / Build a day</p><h2>One city. Three versions of you.</h2></div></div><div class="plan-grid"><article><span class="plan-number">A</span><h3>Classic neon</h3><p>Start with Fremont at golden hour, take the Arts District for dinner, then decide whether the new Strip earns the night.</p><a href="#areas">Build this route →</a></article><article><span class="plan-number">B</span><h3>Desert reset</h3><p>Red Rock in the morning, Summerlin for lunch, and a quiet Henderson sunset when the city starts to turn the volume up.</p><a href="#areas">Build this route →</a></article><article><span class="plan-number">C</span><h3>Food after dark</h3><p>Chinatown first, a low-key Arts District table second, then a short, intentional walk through the lights.</p><a href="#areas">Build this route →</a></article></div></section>
+  </main>
+  <footer><span>VEGAS / FIELD GUIDE</span><span>For planning, not emergency response. Call 911 for emergencies.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
